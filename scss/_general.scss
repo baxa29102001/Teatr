@@ -17,3 +17,9 @@ body {
   margin-right: auto;
   padding: 0 20px;
 }
+
+@media screen and (max-width: $phone_width) {
+  .container {
+    max-width: 550px;
+  }
+}

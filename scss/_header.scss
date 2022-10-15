@@ -8,6 +8,10 @@
     display: flex;
     justify-content: space-between;
     padding: 50px 0;
+
+    .burger_menu {
+      display: none;
+    }
   }
 
   &_navigation {
@@ -42,6 +46,34 @@
       margin-top: 2px;
       height: 2px;
       background-color: $main_gold;
+    }
+  }
+}
+
+
+
+// @media screen and (max-width: $pc_width) {
+//   .header {
+//     &_navigation {
+//       display: none;
+//     }
+
+//     .burger_menu {
+//       display: none;
+//     }
+//   }
+// }
+
+@media screen and (max-width: $phone_width) {
+  .header {
+    height: 100vh;
+    &_container {
+      .burger_menu {
+        display: block;
+      }
+    }
+    &_navigation {
+      display: none;
     }
   }
 }
