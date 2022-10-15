@@ -1,0 +1,63 @@
+.hero {
+  display: flex;
+  gap: 125px;
+  align-items: center;
+  padding-bottom: 40px;
+
+  &_content {
+    &_title {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 87px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      color: #ffffff;
+    }
+
+    &_desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 150%;
+      color: #ffffff;
+      margin-bottom: 49px;
+    }
+    &_btn {
+      padding: 10px 47px;
+      background-color: $main_gold;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      border: none;
+    }
+  }
+
+  &_slider {
+    &_navigation {
+      display: flex;
+      justify-content: space-between;
+
+      &_back,
+      &_next {
+        display: flex;
+        gap: 10px;
+        p {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+      }
+
+      &_back {
+        p {
+          color: #c4c4c4;
+        }
+      }
+    }
+  }
+}
