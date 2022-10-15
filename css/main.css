@@ -91,9 +91,37 @@ body {
   text-transform: uppercase;
   border: none;
 }
+.hero_slider .first_slide {
+  position: relative;
+  top: 0;
+  z-index: 7;
+}
+.hero_slider .first_slide .main_img {
+  position: relative;
+  z-index: 8;
+}
+.hero_slider .first_slide .slide {
+  position: absolute;
+  top: 4%;
+  left: 20px;
+}
+.hero_slider .first_slide .slide img {
+  position: absolute;
+}
+.hero_slider .first_slide .slide .slide_child {
+  position: relative;
+}
+.hero_slider .first_slide .slide .slide_layout {
+  background: linear-gradient(0deg, rgba(209, 169, 84, 0.85), rgba(209, 169, 84, 0.85));
+  width: 350px;
+  height: 490px;
+  position: absolute;
+  z-index: 2;
+}
 .hero_slider_navigation {
   display: flex;
   justify-content: space-between;
+  margin-top: 40px;
 }
 .hero_slider_navigation_back, .hero_slider_navigation_next {
   display: flex;
@@ -132,12 +160,35 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #c4c4c4;
-  bottom: 38%;
-  transform: rotate(90deg);
+  top: 20%;
+  transform: rotate(-90deg);
+}
+.sidenav .sidenav_hr {
+  width: 3px;
+  height: 80px;
+  background-color: #c4c4c4;
+  margin-bottom: 30px;
+}
+.sidenav i {
+  font-size: 26px;
 }
 .sidenav_navigation {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+.sidenav_navigation_item a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.sidenav_navigation_item a:hover {
+  color: #D1A954;
+}
+.sidenav_navigation_item a:hover svg path {
+  fill: #D1A954;
 }
 
 /*# sourceMappingURL=main.css.map */

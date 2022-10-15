@@ -18,14 +18,44 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #c4c4c4;
-    // left: 10px;
-    bottom: 38%;
+    top: 20%;
+    transform: rotate(-90deg);
+  }
 
-    transform: rotate(90deg);
+  .sidenav_hr {
+    width: 3px;
+    height: 80px;
+    background-color: #c4c4c4;
+    margin-bottom: 30px;
+  }
+
+  i {
+    font-size: 26px;
   }
 
   &_navigation {
     display: flex;
     flex-direction: column;
+    list-style: none;
+    gap: 30px;
+    padding-bottom: 10px;
+
+    &_item {
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          color: $main_gold;
+
+          svg {
+            path {
+              fill: $main_gold;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -35,10 +35,45 @@
   }
 
   &_slider {
+    .first_slide {
+      position: relative;
+      top: 0;
+      z-index: 7;
+
+      .main_img {
+        position: relative;
+        z-index: 8;
+      }
+      .slide {
+        position: absolute;
+        top: 4%;
+        left: 20px;
+        img {
+          position: absolute;
+        }
+
+        .slide_child {
+          position: relative;
+        }
+
+        .slide_layout {
+          background: linear-gradient(
+            0deg,
+            rgba(209, 169, 84, 0.85),
+            rgba(209, 169, 84, 0.85)
+          );
+          width: 350px;
+          height: 490px;
+          position: absolute;
+          z-index: 2;
+        }
+      }
+    }
+
     &_navigation {
       display: flex;
       justify-content: space-between;
-
+      margin-top: 40px;
       &_back,
       &_next {
         display: flex;
